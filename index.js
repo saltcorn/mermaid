@@ -22,21 +22,6 @@ const mermaid = {
    
   ],*/
   run: (v, req, attrs = {}) => {
-    const rndid = Math.floor(Math.random() * 16777215).toString(16);
-    const opts = {
-      enableTime: !attrs.day_only,
-      allowInput: attrs.allow_input,
-      dateFormat: attrs.day_only ? "Y-m-d" : "Z",
-      altInput: true,
-      altFormat: attrs.dateFormat || (attrs.day_only ? "Y-m-d" : "Y-m-d H:i"),
-      minDate: attrs.minDate,
-      //maxDate: attrs.maxDate,
-      locale: attrs.locale,
-      defaultDate: attrs.default_now && !v ? new Date() : undefined,
-      defaultHour: attrs.current_hm && !v ? new Date().getHours() : undefined,
-      defaultMinute:
-        attrs.current_hm && !v ? new Date().getMinutes() : undefined,
-    };
     return (
       pre({ class: "mermaid" }, v) +
       script(
