@@ -1,0 +1,38 @@
+{
+  "name": "@saltcorn/mermaid",
+  "version": "0.1.0",
+  "description": "Render diagrams with Mermaid",
+  "main": "index.js",
+  "dependencies": {
+    "@saltcorn/data": "^0.9.3",
+    "@saltcorn/markup": "^0.9.3"
+  },
+  "author": "Tom Nielsen",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "repository": "github:saltcorn/mermaid",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "no-unused-vars": "off",
+      "no-case-declarations": "off",
+      "no-empty": "warn",
+      "no-fallthrough": "warn"
+    }
+  }
+}
