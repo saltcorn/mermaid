@@ -11,13 +11,13 @@ const db = require("@saltcorn/data/db");
 
 const headers = [
   {
-    script: `static_assets/${db.connectObj.version_tag}/mermaid.min.js`,
+    script: `/static_assets/${db.connectObj.version_tag}/mermaid.min.js`,
   },
 ];
 
 const mermaid = {
   type: "String",
-  isEdit: true,
+  isEdit: false,
   /*configFields: [
    
   ],*/
